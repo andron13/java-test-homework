@@ -32,4 +32,3 @@ public class LoneSum {
         else System.out.println(a + b + c);
     }
 }
-
