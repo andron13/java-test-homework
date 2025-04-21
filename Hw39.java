@@ -10,7 +10,7 @@ public class Hw39 {
         System.out.println("Type a price of the tile");
         double tilePrice = scanner.nextDouble();
         double totalCost = calculateCost(length, width, tilePrice);
-        System.out.println("Total price is " + (int)totalCost + " " + "euro");
+        System.out.println("Total price is " + (int) totalCost + " " + "euro");
     }
 
     public static double calculateCost(double length, double width, double priceOfTiles) {
