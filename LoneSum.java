@@ -20,8 +20,7 @@ public class LoneSum {
 
     // First case: a=b=c - return true.
     public static boolean ifTrue(int a, int b, int c) {
-        if ((a / b) == 1 & (b / c) == 1) return true;
-        else return false;
+        if (a == b && b == c) return true;
     }
 
     // Other cases: a = b  |  b = c  |  a = c  |  a != b != c
