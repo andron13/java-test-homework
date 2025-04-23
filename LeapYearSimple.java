@@ -11,7 +11,7 @@ public class LeapYearSimple {
     public static void leapYear(int yearStart, int yearEnd) {
         for (int i = yearStart; i < yearEnd; i++) {
             if (i % 4 == 0) {
-                System.out.println(i + "- високосный год");
+                System.out.println(i + " - високосный год");
             }
         }
     }
