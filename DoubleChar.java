@@ -13,11 +13,10 @@ public class DoubleChar {
     public static String doubleChar(String input) {
         String output = "";
         for (int i = 0; i < input.length(); i++) {
-            output = input.substring(i, i + 1);
-            output = output + output;
-            System.out.print(output);
+            String doubledChar = input.substring(i, i + 1) + input.substring(i, i + 1);
+            output += doubledChar;
         }
-        System.out.println();
+        System.out.println(output);
         return output;
     }
 }
