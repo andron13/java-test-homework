@@ -8,19 +8,15 @@ public class PrimeNumber {
 
     // Программа находит простые числа в диапазоне от 2 до range.
     public static void printPrimeNumber(int range) {
-        for (int i = 2; i < range; i++) {
+        for (int i = 2; i < range; i++)
             if (primeNumbers(i)) {
-                System.out.println(i + " - простое число");
+                System.out.println(i);
             }
-        }
     }
 
     public static boolean primeNumbers(int checkNumber) {
-        for (int i = 2; i < checkNumber; i++) {
-            if (checkNumber % i == 0) {
-                return false;
-            }
-        }
+        for (int i = 2; i < checkNumber; i++)
+            if (checkNumber % i == 0) return false;
         return true;
     }
 }
