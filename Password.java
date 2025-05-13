@@ -13,16 +13,16 @@ public class Password {
     private static String genPass() {
         Scanner input = new Scanner(System.in);
         System.out.print("Введите необходимую длину пароля: ");
-        int lenght = input.nextInt();
+        int length = input.nextInt();
         System.out.print("Теперь выберите тип пароля, написав 1 или 2, где 1 - пароль содержит только буквы, 2 - пароль содержит буквы и цифры: ");
         int choice = input.nextInt();
         String pass = "";
         if (choice == 1) {
-            for (int i = 0; i < lenght; i++) {
+            for (int i = 0; i < length; i++) {
                 pass = pass + genString();
             }
         } else if (choice == 2) {
-            for (int i = 0; i < lenght; i++) {
+            for (int i = 0; i < length; i++) {
                 double random = Math.random();
                 if (random < 0.5) pass = pass + genString();
                 else if (random >= 0.5) {
