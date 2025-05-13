@@ -26,9 +26,9 @@ public class GuessTheNumberGame {
     private static int userNumber(int min, int max, int k) {
         int guessNumber = (int) Math.floor(Math.random() * (max - min + 1) + min);
         int userNumber = 0;
+        Scanner input = new Scanner(System.in);
         for (int i = 1; i <= k; i++) {
             System.out.println("Попытка " + i + ", введите число");
-            Scanner input = new Scanner(System.in);
             userNumber = input.nextInt();
             if (userNumber == guessNumber) {
                 System.out.println("Ура! Ты отгадал число!");
